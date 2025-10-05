@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+  <title>Teachers DashBord</title>
+<link rel="stylesheet"  href="./css/style.css">
+<style>
+   body {
+      background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    /* Add a subtle overlay for better text readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+    }
+
+    .jumbotron {
+      background-color: rgba(255, 255, 255, 0.85);
+      color: black;
+    }
+
+    .btn-outline {
+      color: white;
+      border-color: white;
+    }
+
+    .btn-outline:hover {
+      background-color: white;
+      color: black;
+    }
+</style>
+</head>
+
+<body class="body">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="https://dutchcryptoinvestors.com/wp-content/uploads/2024/01/1_wu7eHXWDNokq0a96LiswJw.png"
+        alt="CodeX Logo" width="30" height="30" class="d-inline-block align-top mr-2">
+      CodeX
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left navigation -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- Developer Space -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Developer Space</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="https://codepen.io/">Code Editor</a>
+            <a class="dropdown-item"
+              href="https://uqzpr8pm2c24p2fpksmuiw.on.drv.tw/SKMP%20INFOTECH%20TECHNOLOGIES/SKMP%20NEW%20%20CEO%20PORTAL/">Founder
+              Profile</a>
+          </div>
+        </li>
+
+        <!-- Tutorials -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Tutorials</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="html.html">Html</a>
+            <a class="dropdown-item" href="css.html">CSS</a>
+            <a class="dropdown-item" href="javascript.html">Javascript</a>
+            <a class="dropdown-item" href="Bootstrap.html">Bootstrap</a>
+            <a class="dropdown-item" href="Tailwind.html">Tailwind</a>
+            <a class="dropdown-item" href="vuejs.html">Vue.js</a>
+            <a class="dropdown-item" href="wordpress.html">Wordpress</a>
+            <a class="dropdown-item" href="Mysql.html">MySql</a>
+            <a class="dropdown-item" href="Github.html">GitHub</a>
+            <a class="dropdown-item" href="Ai.html">AI</a>
+            <a class="dropdown-item" href="Python.html">Python</a>
+          </div>
+        </li>
+
+        <!-- References -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">References</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="Gate.html">Gate</a>
+            <a class="dropdown-item" href="DevOps.html">DevOps</a>
+            <a class="dropdown-item" href="CsSubjects.html">CS Subjects</a>
+            <a class="dropdown-item" href="interviewcorner.html">Interview Corner</a>
+            <a class="dropdown-item" href="softwaretool.html">Software and Tools</a>
+          </div>
+        </li>
+
+        <!-- Exercises -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Exercises</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+            <a class="dropdown-item" href="Praticecodingskill.html">Practice Coding</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Right Section -->
+      <div class="d-flex flex-wrap align-items-center">
+       
+        <form class="form-inline mr-2 mb-2">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search tutorials..." aria-label="Search">
+        </form>
+        <a href="indexuser.html" class="btn btn-outline-danger mr-2 mb-2">Back To Home</a>
+       
+      </div>
+    </div>
+  </nav>
+ 
+
+  </div>
+  <section class="body">
+  <section>
+ <!-- Main Content -->
+  <div class="container py-4">
+    <div class="card">
+      <div class="card-header bg-white">
+        <h4 class="mb-0">📋 Student User Request Approval</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Student Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="requestTable">
+              <!-- Sample Rows -->
+              <tr>
+                <td>1</td>
+                <td>Amit Kumar</td>
+                <td>amit@example.com</td>
+                <td>BSc Computer Science</td>
+                <td>05 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Priya Sharma</td>
+                <td>priya@example.com</td>
+                <td>BCA</td>
+                <td>04 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Amit Kumar</td>
+                <td>amit@example.com</td>
+                <td>BSc Computer Science</td>
+                <td>05 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Priya Sharma</td>
+                <td>priya@example.com</td>
+                <td>BCA</td>
+                <td>04 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr><tr>
+                <td>1</td>
+                <td>Amit Kumar</td>
+                <td>amit@example.com</td>
+                <td>BSc Computer Science</td>
+                <td>05 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Priya Sharma</td>
+                <td>priya@example.com</td>
+                <td>BCA</td>
+                <td>04 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+                <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>  <td>3</td>
+                <td>Rahul Das</td>
+                <td>rahul@example.com</td>
+                <td>MSc IT</td>
+                <td>03 Oct 2025</td>
+                <td class="status status-pending">Pending</td>
+                <td>
+                  <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+                  <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+                </td>
+              </tr>
+              <!-- More rows can be added dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <div style="background-color: black; color: white;">
+    <footer class="bg-body-tertiary text-center    ">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+            role="button"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+            role="button"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+            role="button"><i class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+            role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
+            role="button"><i class="fab fa-linkedin-in"></i></a>
+          <!-- Github -->
+          <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!"
+            role="button"><i class="fab fa-github"></i></a>
+        </section>
+
+        <!-- Section: Social media -->
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input type="email" id="form5Example24" class="form-control" />
+                  <label class="form-label" for="form5Example24">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>CODEX
+                </h6>
+                <p>
+                 “Building the Future, One Line at a Time.”
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Courses
+                </h6>
+                <p>
+                  <a href="/html.html">Html</a>
+                <p>
+                  <a href="/css.html">CSS</a>
+                </p>
+                <p>
+                  <a  href="/javascript.html">Javascript</a>
+                </p>
+                <p>
+                  <a  href="/Bootstrap.html">Bootstrap</a>
+                </p>
+                <p>
+                  <a  href="/Tailwind.html">Tailwind</a>
+                </p>
+                <p>
+                  <a href="/vuejs.html">Vue.js</a>
+                </p>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  References
+                </h6>
+                <p>
+
+                   <a  href="/Gate.html">Gate</a>
+                </p>
+                <p>
+                <a  href="/DevOps.html">DevOps</a>
+                </p>
+                <p>
+                   <a  href="/CsSubjects.html">Cs Subjects</a>
+                </p>
+                <p>
+                  <a  href="/interviewcorner.html">InterView Corner</a>
+                </p>
+                <p>  <a  href="/softwaretool.html">Software and Tools</a></p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> Balasore,Odisha,India,pin-756001</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  Email:- Hr@CodeX.com
+                  <br>
+                   <i class="fas fa-envelope me-3"></i>
+                  Email:-Support@CodeX.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> +91 7008608082</p>
+                <p><i class="fas fa-phone me-3"></i> +91 7377785172</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 CODEX. All rights reserved with 
+        <a class="text-reset fw-bold" href="https://uqzpr8pm2c24p2fpksmuiw.on.drv.tw/SKMP%20INFOTECH%20TECHNOLOGIES/SKMP%20NEW%20%20CEO%20PORTAL/"> ♥ by Suzen Kumar Mohanty.</a>
+        (Build For Project Purpose) Date:-23/09/2025
+      </div>
+      <!-- Copyright -->
+
+
+    </footer>
+  </div>
+  <!-- Footer -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>// Initialization for ES Users
+    import { Input, initMDB } from "mdb-ui-kit";
+
+    initMDB({ Input });</script>
+
+ <script>
+     const tableBody = document.getElementById('requestTable');
+
+  const courses = ['BSc Computer Science', 'BCA', 'MSc IT', 'BA', 'BCom', 'MSc Physics'];
+
+  // Generate 1000 student requests
+  for (let i = 1; i <= 1000; i++) {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${i}</td>
+      <td>Student ${i}</td>
+      <td>student${i}@example.com</td>
+      <td>${courses[i % courses.length]}</td>
+      <td>${('0' + (i % 30 + 1)).slice(-2)} Oct 2025</td>
+      <td class="status status-pending">Pending</td>
+      <td>
+        <button class="btn btn-success btn-sm" onclick="approveRequest(this)">Approve</button>
+        <button class="btn btn-danger btn-sm" onclick="rejectRequest(this)">Reject</button>
+      </td>
+    `;
+    tableBody.appendChild(row);
+  }
+
+  // Approve/Reject functions
+  function approveRequest(button) {
+    const row = button.closest('tr');
+    const statusCell = row.querySelector('.status');
+    statusCell.textContent = 'Approved';
+    statusCell.classList.remove('status-pending', 'status-rejected');
+    statusCell.classList.add('status-approved');
+  }
+
+  function rejectRequest(button) {
+    const row = button.closest('tr');
+    const statusCell = row.querySelector('.status');
+    statusCell.textContent = 'Rejected';
+    statusCell.classList.remove('status-pending', 'status-approved');
+    statusCell.classList.add('status-rejected');
+  }
+
+ </script>
+     
+ 
+</body>
+
+</html>
