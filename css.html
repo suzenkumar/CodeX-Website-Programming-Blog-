@@ -15,6 +15,39 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Css Tuto</title>
 <link rel="stylesheet"  href="./css/style.css">
+<style>
+   body {
+      background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    /* Add a subtle overlay for better text readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+   .dectext{
+      color: white;
+      font-weight: bold;
+
+    }
+
+    h1{
+      color: white;
+      font-weight: bold;
+    }
+ 
+    </style>
 </head>
 
 <body>
@@ -112,65 +145,131 @@
 
    <u><h1>What is  Css?</h1></u>
     <img src="https://www.thecrazyprogrammer.com/wp-content/uploads/2017/11/CSS3.jpg" alt="Css" class="photo">
-    
-    <p class="dectext">
-   CSS (Cascading Style Sheets) is a language designed to simplify the process of making web pages presentable.
+    <center>
+  <pre class="dectext">
+CSS (Cascading Style Sheets) is a language designed to simplify the process of 
+making web pages presentable.
 
-It allows you to apply styles to HTML documents by prescribing colors, fonts, spacing, and positioning.
-The main advantages are the separation of content (in HTML) and styling (in CSS) and the same CSS rules can be used across all pages and not have to be rewritten.
-HTML uses tags, and CSS uses rule sets.
-CSS styles are applied to the HTML element using selectors.
-Webpage-With---without-CSS
+It allows you to apply styles to HTML documents by prescribing:
+  - Colors
+  - Fonts
+  - Spacing
+  - Positioning
+
+Main advantages:
+  • Separation of content (HTML) and styling (CSS)
+  • Reuse of styles across multiple pages without rewriting
+  • HTML uses tags; CSS uses rule sets
+  • CSS styles are applied using selectors
+
+----------------------------------------
 Why CSS?
-Saves Time: Write CSS once and reuse it across multiple HTML pages.
-Easy Maintenance: Change the style globally with a single modification.
-Search Engine Friendly: Clean coding technique that improves readability for search engines.
-Superior Styles: Offers a wider array of attributes compared to HTML.
-Offline Browsing: CSS can store web applications locally using an offline cache, allowing offline viewing.
-CSS Syntax
-CSS consists of style rules that are interpreted by the browser and applied to the corresponding elements. A style rule set includes a selector and a declaration block.
+----------------------------------------
 
-Selector: Targets specific HTML elements to apply styles.
-Declaration: Combination of a property and its corresponding value.
+• Saves Time:
+  Write CSS once and reuse it across multiple HTML pages.
+
+• Easy Maintenance:
+  Change the style globally with a single modification.
+
+• Search Engine Friendly:
+  Clean coding technique improves readability for search engines.
+
+• Superior Styles:
+  Offers a wider array of attributes compared to HTML.
+
+• Offline Browsing:
+  CSS can store web applications locally using cache, allowing offline viewing.
+
+----------------------------------------
+CSS Syntax
+----------------------------------------
+
+CSS consists of style rules interpreted by the browser and applied to elements.
+
+A rule set includes:
+  - Selector: Targets specific HTML elements
+  - Declaration Block: Contains one or more declarations
+
+Each declaration:
+  - Property: The CSS attribute (e.g., color, font-size)
+  - Value: The value of that property
+
+----------------------------------------
+Example
+----------------------------------------
 
 // HTML Element
-<h1>Hello World</h1>
-
-
+Hello World
 
 // CSS Style
 h1 {
-    color: blue; font-size: 12px;
+    color: blue;
+    font-size: 12px;
 }
 
-The CSS code targets the h1 element with the selector h1. The declaration { color: blue; font-size: 12px; } sets the text color to blue and the font size to 12 pixels.
+In this example:
+  • The selector is "h1"
+  • The declarations set the text color to blue and font size to 12px
 
-The selector points to the HTML element that you want to style.
-The declaration block contains one or more declarations separated by semicolons.
-Each declaration includes a CSS property name and a value, separated by a colon.
-Example
+Another example:
 
 p {
     color: blue;
     text-align: center;
 }
-CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces. In this example, all paragraph element (<p> tag) will be centre-aligned, with a blue text color.
 
+This rule applies to all <p> tags:
+  • Text color: Blue
+  • Text alignment: Center
+
+Notes:
+  - CSS declarations end with a semicolon (;)
+  - Declaration blocks are wrapped in curly braces {}
+
+----------------------------------------
 Ways to Apply CSS
-Inline CSS: Directly within the HTML element using the style attribute.
-Internal CSS: Within a style tag in the head
-External CSS: The external CSS is the CSS linked to an HTML file using the <link> tag.
-What is Cascading?
-Cascading in CSS refers to how styles are applied to elements based on priority rules. When multiple CSS rules target the same element, the browser decides which style to apply by following the cascading order: inline styles, internal styles, and external stylesheets. The specificity of selectors, the order of CSS rules, and the use of important tags further determine which styles take precedence. This allows developers to layer styles and create more complex designs without overriding other rules unnecessarily. Understanding this behavior is essential for efficient and effective styling.
+----------------------------------------
 
+1. Inline CSS:
+   - Inside the HTML element using the style attribute
+   p style="color: red;">Text p
+
+2. Internal CSS:
+   - Within 
+
+3. External CSS:
+   - Using a separate .css file linked via <link>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+
+----------------------------------------
+What is Cascading?
+----------------------------------------
+
+Cascading defines how conflicting CSS rules are resolved.
+
+Priority order (highest to lowest):
+  1. Inline styles
+  2. Internal styles (within tag)
+  3. External stylesheets
+
+Additional factors:
+  • Specificity of selectors
+  • Order of appearance
+  •
+
+Understanding cascading allows for layered, flexible styling.
+
+----------------------------------------
 Advantages of CSS
-Simplifies web design and maintenance.
-Enhances website performance and user experience.
-Supports responsive and adaptive designs for all devices.
-   
-   
-    </p>
-   
+----------------------------------------
+
+✔ Simplifies web design and maintenance  
+✔ Enhances performance and user experience  
+✔ Supports responsive design across all devices  
+</pre>
+
+</center>  
 
 
  <h4>Last Updated On:24/09/2025</h4>

@@ -14,6 +14,39 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Html Tuto</title>
 <link rel="stylesheet"  href="./css/style.css">
+<style>
+   body {
+      background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    /* Add a subtle overlay for better text readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+   .dectext{
+      color: white;
+      font-weight: bold;
+
+    }
+
+    h1{
+      color: white;
+      font-weight: bold;
+    }
+ 
+    </style>
 </head>
 
 <body>
@@ -112,7 +145,7 @@
     <img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" alt="Html" class="photo">
  <section id="introduction">
       <h2>1. Introduction — What is HTML?</h2>
-      <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the standard markup language used to create and structure content on the World Wide Web.</p>
+      <pre>HTML stands for <strong>HyperText Markup Language</strong>. It is the standard markup language used to create and structure content on the World Wide Web.</p>
       <ul>
         <li>Provides the skeleton of a web page</li>
         <li>Browsers read HTML and render the structured content visually</li>

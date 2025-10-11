@@ -24,8 +24,13 @@
 
     h4{
       font-size: 15px;
-      color:purple;
+      color:red;
       font-weight: bold;
+    }
+     .dectext{
+      color: white;
+      font-weight: bold;
+
     }
     .photo{
       width:500px;
@@ -33,8 +38,8 @@
     }
 
     .signin{
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 330px;
     align-items: center;
     margin-top: 90px;
     margin-bottom: 20px;

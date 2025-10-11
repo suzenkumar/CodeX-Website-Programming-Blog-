@@ -14,6 +14,39 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>TailWind Tuto</title>
 <link rel="stylesheet"  href="./css/style.css">
+<style>
+   body {
+      background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+    }
+
+    /* Add a subtle overlay for better text readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+   .dectext{
+      color: white;
+      font-weight: bold;
+
+    }
+
+    h1{
+      color: white;
+      font-weight: bold;
+    }
+ 
+    </style>
 </head>
 
 <body>
@@ -110,7 +143,7 @@
   <section>
      <h1><u>Tailwind</u></h1>
       <img src="https://cdnblog.webkul.com/blog/wp-content/uploads/2024/05/tailwindcss-1633184775.webp" alt="Tailwind" class="photo">
-    <p class="dectext">
+    <pre class="dectext">
       Tailwind CSS is a utility-first CSS framework designed to build custom user interfaces rapidly and efficiently. Unlike traditional CSS frameworks that provide pre-designed components, Tailwind offers low-level utility classes that can be combined to create unique designs directly in your HTML.
 
 Key Features
@@ -183,7 +216,7 @@ Initial Skepticism: Some developers may initially find the utility-first approac
 Conclusion
 
 Tailwind CSS is a powerful and flexible framework that simplifies the process of building custom, responsive user interfaces. Its utility-first approach, combined with extensive customization options and modern CSS features, makes it a popular choice among developers
-      </p>
+      </pre>
    
 
 

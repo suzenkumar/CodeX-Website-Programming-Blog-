@@ -9,71 +9,57 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Sign Up Codex</title>
-<link rel="stylesheet"  href="./css/style.css">
+    
+  <title>Sign In - CodeX</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="https://dutchcryptoinvestors.com/wp-content/uploads/2024/01/1_wu7eHXWDNokq0a96LiswJw.png"
         alt="CodeX Logo" width="30" height="30" class="d-inline-block align-top mr-2">
       CodeX
     </a>
-
-    <!-- Toggler for mobile -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left navigation -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <!-- Developer Space -->
+        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Developer Space</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown">Developer Space</a>
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="https://codepen.io/">Code Editor</a>
-            <a class="dropdown-item"
-              href="https://uqzpr8pm2c24p2fpksmuiw.on.drv.tw/SKMP%20INFOTECH%20TECHNOLOGIES/SKMP%20NEW%20%20CEO%20PORTAL/">Founder
-              Profile</a>
+            <a class="dropdown-item" href="#">Founder Profile</a>
           </div>
         </li>
-
-        <!-- Tutorials -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Tutorials</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-            <a class="dropdown-item" href="html.html">Html</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown">Tutorials</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="html.html">HTML</a>
             <a class="dropdown-item" href="css.html">CSS</a>
-            <a class="dropdown-item" href="javascript.html">Javascript</a>
+            <a class="dropdown-item" href="javascript.html">JavaScript</a>
             <a class="dropdown-item" href="Bootstrap.html">Bootstrap</a>
             <a class="dropdown-item" href="Tailwind.html">Tailwind</a>
             <a class="dropdown-item" href="vuejs.html">Vue.js</a>
-            <a class="dropdown-item" href="wordpress.html">Wordpress</a>
-            <a class="dropdown-item" href="Mysql.html">MySql</a>
+            <a class="dropdown-item" href="wordpress.html">WordPress</a>
+            <a class="dropdown-item" href="Mysql.html">MySQL</a>
             <a class="dropdown-item" href="Github.html">GitHub</a>
             <a class="dropdown-item" href="Ai.html">AI</a>
             <a class="dropdown-item" href="Python.html">Python</a>
           </div>
         </li>
-
-        <!-- References -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">References</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown">References</a>
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="Gate.html">Gate</a>
             <a class="dropdown-item" href="DevOps.html">DevOps</a>
             <a class="dropdown-item" href="CsSubjects.html">CS Subjects</a>
@@ -81,18 +67,13 @@
             <a class="dropdown-item" href="softwaretool.html">Software and Tools</a>
           </div>
         </li>
-
-        <!-- Exercises -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Exercises</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown">Exercises</a>
+          <div class="dropdown-menu">
             <a class="dropdown-item" href="Praticecodingskill.html">Practice Coding</a>
           </div>
         </li>
       </ul>
-
-      <!-- Right Section -->
       <div class="d-flex flex-wrap align-items-center">
         <a href="Upgradecodexpro.html" class="btn btn-outline-warning mr-2 mb-2">Upgrade CodeX Pro</a>
         <form class="form-inline mr-2 mb-2">
@@ -104,63 +85,57 @@
       </div>
     </div>
   </nav>
- 
 
-  </div>
-     <section class="login">
-      <center>
+  <!-- Login Section -->
+  <section class="login">
+    <center>
       <div class="box">
-    
-    
-      <h1>CodeX  Student Login</h1>
-      <label>Enter Your User Id</label>
-      <input type="number" value="User Id">
-      <br>
-      <label>Enter Your password</label>
-      <input type="password">
-      <br>
-    
+        <h1>CodeX Student Login</h1>
+        <form id="userloginform">
+          <label for="UserId">Enter Your User Id</label>
+          <input type="text" id="UserId" name="UserId" required><br>
+          <label for="Password">Enter Your Password</label>
+          <input type="password" id="Password" name="Password" required><br>
+          <button type="submit" class="btn btn-info teach">Login</button>
+        </form>
 
-       <button type="button" class="btn btn-info teach"><a href="indexstudent - Copy.html">Login</a></button>
-       <br>
-       <button class="btn btn-danger new"><a href="signup.html">New to CodeX? Create an account</a></button>
-       <br>
-        <button class="btn btn btn-warning new"><a href="Teacher.html">Are You Teacher ? Login Here</a></button>
-      
-      
-      
-
-
-    
-    </div>
+        
+        <button class="btn btn-danger new">
+          <a href="signup.html" style="color: white;">New to CodeX? Create an account</a>
+        </button>
+        
+        <button class="btn btn-warning new">
+          <a href="Teacher.html" style="color: black;">Are You Teacher? Login Here</a>
+        </button>
+      </div>
     </center>
-     <!-- <img src="https://dutchcryptoinvestors.com/wp-content/uploads/2024/01/1_wu7eHXWDNokq0a96LiswJw.png" alt=" code X logo" class="photo">  -->
-      <p class="text-center  mt-5 mb-3" style="color: white;">
-  © 2025 CodeX. All rights reserved. <br>
-  All content on this website is for educational purposes only and may not be reproduced without permission.
-</p>
+    
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
+  <script>
+    document.getElementById('userloginform').addEventListener('submit', function (event) {
+      event.preventDefault();
 
+      const userid = document.getElementById("UserId").value.trim();
+      const password = document.getElementById("Password").value.trim();
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      const validuserid = ["student1", "student2"];
+      const validpassword = "student123";
+
+      const isuservalid = validuserid.includes(userid);
+      const ispassvalid = password === validpassword;
+
+      if (isuservalid && ispassvalid) {
+        alert("Login Successfully!");
+        window.location.href = "indexstudent-copy.html"; // Make sure this file exists
+      } else {
+        alert("Invalid User ID & Password");
+      }
+    });
+  </script>
+
+  <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -170,10 +145,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script>// Initialization for ES Users
-    import { Input, initMDB } from "mdb-ui-kit";
-
-    initMDB({ Input });</script>
 </body>
 
 </html>
